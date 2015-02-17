@@ -4,7 +4,8 @@
   "description": "Mandrill provider for gitevents-mailer",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node test/*_test.js"
+    "test": "node test/*_test.js",
+    "lint": "eslint lib/*.js test/*.js || true"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/ifraixedes/gitevents-mailer-provider-mandrill/issues"
   },
-  "homepage": "https://github.com/ifraixedes/gitevents-mailer-provider-mandrill"
+  "homepage": "https://github.com/ifraixedes/gitevents-mailer-provider-mandrill",
+  "devDependencies": {
+    "eslint": "^0.14.1",
+    "tape": "^3.5.0"
+  }
 }
