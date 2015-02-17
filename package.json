@@ -1,0 +1,25 @@
+{
+  "name": "gitevents-mailer-provider-mandrill",
+  "version": "0.0.0",
+  "description": "Mandrill provider for gitevents-mailer",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node test/*_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ifraixedes/gitevents-mailer-provider-mandrill"
+  },
+  "keywords": [
+    "mailer",
+    "gitevents",
+    "provider",
+    "mandrill"
+  ],
+  "author": "Ivan Fraixedes <ivan@fraixed.es> (http://ivan.fraixed.es)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ifraixedes/gitevents-mailer-provider-mandrill/issues"
+  },
+  "homepage": "https://github.com/ifraixedes/gitevents-mailer-provider-mandrill"
+}
