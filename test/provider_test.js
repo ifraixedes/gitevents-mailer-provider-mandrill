@@ -10,11 +10,11 @@ test('GitEvents-Mailer-Provider-Mandril', function (t) {
   /* eslint-disable no-shadow */
   test('initialise it', function (t) {
     t.plan(10);
-    t.throws(mandrillPlugin.bind(null), /API KEY is required/i,
+    t.throws(mandrillPlugin.bind(null), /API KEY/i,
              'exported function takes API KEY as first parameter and an optional options object as second one');
-    t.throws(mandrillPlugin.bind(null, 10), /API KEY must be a non-empty string/i,
+    t.throws(mandrillPlugin.bind(null, 10), /invalid/i,
              'exported function API KEY parameters must be a string');
-    t.throws(mandrillPlugin.bind(null, ''), /API KEY must be a non-empty string/i,
+    t.throws(mandrillPlugin.bind(null, ''), /invalid/i,
              'exported function API KEY parameters must be a non-empty string');
     t.doesNotThrow(mandrillPlugin.bind(null, 'APIKEY'),
                    'exported function return the object plugin when only one parameters, API KEY is provided');
